@@ -1,5 +1,6 @@
 package com.dz.app.model.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.AttributeOverride;
@@ -42,7 +43,7 @@ import org.hibernate.annotations.NamedQuery;
 })
 @Entity
 @Table(name="AdpEmployee",schema="EMPRDEV")
-public class Employee {
+public class Employee implements Serializable{
 
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
